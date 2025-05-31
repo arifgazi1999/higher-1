@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="orange">
+   <h1>Employee Performance Evaluation System</h1> 
+</body>
+</html>
+<script>
+let  arr = [{ name: "Alice", tasksCompleted: 8, rating: 4.7 },
+
+             { name: "Bob", tasksCompleted: 4, rating: 4.0 },
+
+            { name: "Charlie", tasksCompleted: 6, rating: 3.5 },
+            { name: "David", tasksCompleted: 10, rating: 4.9 },
+              { name: "Eve", tasksCompleted: 7, rating: 2.8 }]
+let ans = arr.filter(each => each>5==0);
+console.log(ans);
+let arr = [ 
+            {
+            name : "Alice" ,
+            rating : 4.7
+            performance level : "Excellent"
+            } ,
+             {
+            name : "Bob" ,
+            rating : 4.0
+            performance level : "Good"
+            } ,
+            {
+            name : "Charlie" ,
+            rating : 3.5
+            performance level : "Good"
+            } ,
+            {
+            name : "David" ,
+            rating : 4.9
+            performance level : "Excellent"
+            } ,
+            {
+            name : "Eve" ,
+            rating : 2.8
+            performance level : "Need Improvement"
+            } ,
+
+        ]
+       let myData = arr.map((ele ,i ) =>{
+           console.log(ele ,i)
+    })
+    let arr = [ 
+            {
+            name : "Alice" ,
+            rating : 4.7
+            performance level : "Excellent"
+            } ,
+             {
+            name : "Bob" ,
+            rating : 4.0
+            performance level : "Good"
+            } ,
+            {
+            name : "Charlie" ,
+            rating : 3.5
+            performance level : "Good"
+            } ,
+            {
+            name : "David" ,
+            rating : 4.9
+            performance level : "Excellent"
+            } ,
+            {
+            name : "Eve" ,
+            rating : 2.8
+            performance level : "Need Improvement"
+            } ,
+
+        ]
+            arr.sort(function(rating){
+          if(rating>4.5){
+            return Excellent
+          }
+          else if(rating<4.5){
+            return Good
+          }
+          else{
+            return need to improvement
+          }
+          })
+          
+
+
+
+
+            
+
+    </script>
