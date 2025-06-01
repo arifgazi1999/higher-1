@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is solution of question no. 11</h2>
+</body>
+</html>
+<script>
+    //Use map() to extract the product names.
+    function processProducts(products) {
+  return products.map(product => product.name);
+}
+
+
+const products = [
+  { name: "Laptop", price: 1000 },
+  { name: "Mouse", price: 20 }
+];
+
+const productNames = processProducts(products);
+console.log(productNames);
+
+//Use forEach() to iterate over the products and log messages based on the price of each product.
+function processProducts(products) {
+  products.forEach(product => {
+    if (product.price > 50) {
+      console.log(`${product.name} is priced above $50.`);
+    } else {
+      console.log(`${product.name} is priced below or equal to $50.`);
+    }
+  });
+}
+const products = [
+  { name: "Laptop", price: 1000 },
+  { name: "Mouse", price: 20 }
+];
+
+processProducts(products);
+
+
+    </script>
